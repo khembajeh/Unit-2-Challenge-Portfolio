@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+
+/*back ground color*/
+
+h2 {
+
+  
+}
+
+
+/* body styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color:blanchedalmond
+}
+
+
+/* header styling */
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: bisque;
+}
+
+header h1{
+  color:antiquewhite
+  font-size:35px;
+  font-weight:bold;
+  background-color:white;
+  border: 2px dotted ;
+  padding:10px;
+  
+}
+
+header nav ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header nav ul li a{
+  padding:1px;
+  font-size:35px;
+  font-weight:bold;
+  margin:50px 50px 0 0;
+  border:solid;
+  background-color:burlywood;
+  text-decoration: none;
+}
+ header nav ul li a:hover{
+  background:whitesmoke;
+  color:blue;
+
+
+ }
+
+
+/* Hero Banner styling */
+
+.hero-banner {
+background-image: url(/assets/images/IMG_0836.jpg);
+height:400px;
+background-position:center;
+background-size:100%;
+background-repeat:no-repeat;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-around;
+}
+
+.hero-banner img{
+  height:250px;
+  border-radius: 50%;
+}
+
+.quote {
+  background:#f9f9f9;
+  border-left:5px solid #cc;
+  margin:1.5em 5px;
+  padding: 0.01em 5px;
+}
+
+.quote:before {
+  color:black;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right:0.2em;
+}
+
+.quote h2{
+  display:inline-block;
+}
+/* ABOUT ME STYLING*/
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 20px;
+}
+
+
+.about-section p{
+  font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+/* portfolio containder*/
+
+.container-grid {
+  display: grid;
+  height:500px;
+  background-color: whitesmoke;
+  grid-gap:10px;
+  padding:10px;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr ; 
+  grid-template-areas:
+  "code code code"
+  "project project html"
+  "css css flex"
+}
+
+ 
+
+.code{
+  grid-area: code;
+  background-color: grey;
+  background-image: url(../images/01-html-css-git-challenge-demo.png);
+  background-size: cover;
+
+ 
+}
+
+.project{
+  grid-area: project;
+  background-color: grey;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+}
+.html{
+  grid-area: html;
+  background-color: grey;
+  background-image:url(../images/02-portfolio-2.jpg) ;
+  background-size: cover;
+}
+.css{
+  grid-area: css;
+  background-color: grey;
+}
+.flex{
+  grid-area: flex;
+  background-color: grey;
+}
+
+div h3{
+  border: 10px;
+  padding:10px;
+  background-color: rgb(212, 199, 199);
+  width: 25%;}
+ 
+  
+
+
+  
+  
+
+/* footer styling */
+
+footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 25px;
+  background-color: bisque;
+}
+
+
+footer h2{
+  color:antiquewhite
+  font-size:25px;
+  font-weight:bold;
+  background-color:white;
+  border: 2px dotted ;
+  padding:25px;
+  
+}
+
+footer p{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+footer p{
+  padding:25px;
+  font-size:25px;
+  font-weight:bold;
+  margin:0px 0px;
+  border:solid;
+  background-color:burlywood;
+
+}
+ footer p:hover{
+  background:whitesmoke;
+  color:blue;
+
+
+ }
+ /* media queries for i-Phone screen */
+ @media screen and (max-width: 600px)
+ {
+  header{
+    justify-content: center;
+  }
+  h1{
+    font-size: 10px;
+  }
+  
+.container-grid {
+  width:70%
+}
+ }
+
+
+ /* media queries for tablet */
+ @media screen and (max-width: 900px)
+ {
+  header{
+    justify-content: center;
+  }
+  h1{
+    font-size: 20px;
+  }
+  
+.container-grid {
+  width:100%
+}
+ }
